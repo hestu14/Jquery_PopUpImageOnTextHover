@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Image on Text Hover</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".product a").mouseover(function () {
+                $(".product a img").css("display", "none"); // hide all product images
+                $(this).find("img").css("display", "inline-block"); // show current hover image
+            })
+            $(".product a").mouseout(function () {
+                $(".product a img").css("display", "none"); // hide all product images
+            })
+        });
+    </script>
+    <style>
+        .product a img {
+            display: none;
+            position: absolute;
+            left: 300px;
+            top: -50px;
+            width: 200px;
+    
+        }
+        .product a {
+            display: inline-block;
+            position: relative;
+            text-decoration: none; 
+            decoration: none;
+            color: black;
+            font-size: 2em;
+        }
+        .product {
+              margin-left: 0px;
+        }
+    </style>
+
+
+</head>
+<body>
+    <h2>Tottenham Hotspur Line Up :</h2>
+    <br>
+    <br>
+    <div class="product"><a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Lloris_2018_%28cropped%29.jpg" alt=""/>1. Lloris</a>
+    </div>
+    <div class="product"><a href="#"><img src="https://resources.premierleague.com/premierleague/photos/players/250x250/p80226.png" alt=""/>24. Aurier</a>
+    </div>
+    <div class="product"><a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQkTZRuu1X853gsI8iweOWq7uMWWNrF9h7uIeEiWzhDlua_k_hB&usqp=CAU" alt=""/>4. Alderweireld</a>
+    </div>
+    <div class="product"><a href="#"><img src="https://resources.premierleague.com/premierleague/photos/players/250x250/p173904.png" alt=""/>6. Sanchez</a>
+    </div>
+    <div class="product"><a href="#"><img src="https://tot-tmp.azureedge.net/media/20199/firstteam_bendavies.png?anchor=center&mode=crop&width=750" alt=""/>33. Davies</a>
+    </div>
+    <div class="product"><a href="#"><img src="https://resources.premierleague.com/premierleague/photos/players/250x250/p157668.png" alt=""/>8. Winks</a>
+    </div>
+    <div class="product"><a href="#"><img src="https://i.dailymail.co.uk/1s/2019/11/09/17/20803356-7667913-image-a-17_1573320088233.jpg" alt=""/>18. Lo Celso</a>
+    </div>
+    <div class="product"><a href="#"><img src="https://tot-tmp.azureedge.net/media/20214/firstteam_lucasmoura.png?anchor=center&mode=crop&width=750" alt=""/>27. Lucas Moura</a>
+    </div>
+    <div class="product"><a href="#"><img src="https://resources.premierleague.com/premierleague/photos/players/250x250/p85971.png" alt=""/>7. Son</a>
+    </div>
+    <div class="product"><a href="#"><img src="https://s.hs-data.com/bilder/spieler/gross/204618.jpg" alt=""/>20. Dele</a>
+    </div>
+    <div class="product"><a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2e/Harry_Kane_in_Russia_2.jpg" alt=""/>10. Harry Kane</a>
+    </div>
+
+</body>
+</html>
